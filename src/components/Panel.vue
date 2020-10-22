@@ -2,14 +2,14 @@
 
   <section>
     <teleport>
-      <transition name="fade" >
+      <transition name="fade">
         <Modal v-if="panelOpener" :title="propTitle" @toggle="off"/>
       </transition>
     </teleport>
 
     <ul>
       <li class="container" v-for="(items) in panelItems" v-bind:key="items.title"
-          @click="toggleModal(items.title)" >
+          @click="toggleModal(items.title)">
 
         <div class="header-1">
           <h1 id="h1style">{{ items.title }}</h1>
@@ -53,7 +53,7 @@ export default {
       this.panelOpener = !this.panelOpener;
       this.propTitle = key;
     },
-    off: function (){
+    off: function () {
       this.panelOpener = false;
     },
   }
@@ -78,7 +78,7 @@ export default {
 
 
 #technology {
-  width:  10%;
+  width: 10%;
   min-width: 50px;
   float: right;
   overflow: auto;
@@ -114,13 +114,12 @@ export default {
   box-shadow: 5px 5px 1px #ed5c6f;
 }
 
-.container:hover{
+.container:hover {
   background-color: #676767;
 }
 
 .header-0 {
   grid-area: header-0;
-
   margin-top: 25%;
   margin-bottom: -1.5%;
 

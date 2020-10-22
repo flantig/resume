@@ -52,6 +52,7 @@ export default {
   text-align: center;
   font-size: 400%;
   color: floralwhite;
+  overflow: auto;
 }
 
 #body {
@@ -72,6 +73,7 @@ export default {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  overflow: auto;
 }
 
 #button {

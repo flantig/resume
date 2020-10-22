@@ -25,15 +25,15 @@ export default {
       logoImages: [{
         id: 1, src: require("../assets/headerImages/linkedin.webp"), openTab: function () {
           window.open("https://www.linkedin.com/in/franklin-lantigua-06831aba/")
-        }, imgStyle: {width: "9%", margin: "5px", opacity: 1, }
+        }, imgStyle: {width: "9%", margin: "5px", opacity: 1, minWidth: "70px"}
       }, {
         id: 2, src: require("../assets/headerImages/pdf.png"), openTab: function () {
           window.open("https://drive.google.com/file/d/164LEDfctEf2hm2lvF91Vrde7i3ThSNwK/view?usp=sharing")
-        }, imgStyle: {width: "9%", margin: "5px", opacity: 1}
+        }, imgStyle: {width: "9%", margin: "5px", opacity: 1, minWidth: "70px"}
       }, {
         id: 3, src: require("../assets/headerImages/gitcat.png"), openTab: function () {
           window.open("https://github.com/flantig")
-        }, imgStyle: {width: "9%", margin: "5px", opacity: 1}
+        }, imgStyle: {width: "9%", margin: "5px", opacity: 1, minWidth: "70px"}
       }]
     }
   },
