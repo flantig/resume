@@ -62,8 +62,8 @@ export default {
 
 <style scoped>
 #imgStyle {
-  width: 55%;
-  left: initial;
+  width: 72%;
+  min-width: 200px;
   border-radius: 10px;
 }
 
@@ -73,21 +73,23 @@ export default {
   font-size: 250%;
   text-align: right;
   right: initial;
-
+  overflow: auto;
 }
 
 
 #technology {
-  width: 10%;
+  width:  10%;
+  min-width: 50px;
   float: right;
+  overflow: auto;
 }
 
 /**
   Below is the grid container, to see the layout of the grid and its borders use the following block of code for a dotted outline.
 
-  .container > div {
+.container > div {
   border: 1px dashed #d85151;
-  }
+}
 
   If you ever need to make a new grid, visit https://vue-grid-generator.netlify.app It's an absolute life saver and will help you generate grids.
 
@@ -102,8 +104,8 @@ export default {
   height: auto;
   grid-template-areas: "header-0 header-1"
   "header-0 right";
-  grid-template-columns: 500px 1fr;
-  grid-template-rows: 100px .975fr;
+  grid-template-columns: .4fr 1fr;
+  grid-template-rows: .5fr 1fr;
   background-color: #444444;
   margin: 0px auto; /*centers the container*/
   margin-top: 2%; /*it's what divides it from the other panels*/
@@ -118,17 +120,22 @@ export default {
 
 .header-0 {
   grid-area: header-0;
-  min-width: 50%;
+  position: relative;
+  margin-top: 25%;
+  margin-bottom: -1.5%;
+
 }
 
 .header-1 {
   grid-area: header-1;
   min-width: 70%;
+  position: relative;
 
 }
 
 .right {
   grid-area: right;
+  padding-top: 1%;
 }
 
 .fade-enter-active, .fade-leave-active {
