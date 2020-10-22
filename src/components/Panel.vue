@@ -120,7 +120,7 @@ export default {
 
 .header-0 {
   grid-area: header-0;
-  position: relative;
+
   margin-top: 25%;
   margin-bottom: -1.5%;
 
@@ -129,7 +129,7 @@ export default {
 .header-1 {
   grid-area: header-1;
   min-width: 70%;
-  position: relative;
+
 
 }
 
