@@ -1,6 +1,5 @@
 <template>
   <section id="app">
-
     <Name/>
     <Panel :panelItems="panelItems"/>
 
@@ -23,16 +22,19 @@ export default {
         {
           title: "Full Stack Energy Database",
           src: require("./assets/panelImages/owl.png"),
+          technology: [require("./assets/technologies/pyth.png"), require("./assets/technologies/js.png"), require("./assets/technologies/react.png"), require("./assets/technologies/postnode.png")],
           open: false
         },
         {
           title: "VBA Scripts",
           src: require("./assets/panelImages/vbascript.png"),
+          technology: [require("./assets/technologies/excel.png"), require("./assets/technologies/vba.png")],
           open: true
         },
         {
           title: "Selenium Automation",
           src: require("./assets/panelImages/selenium.png"),
+          technology: [require("./assets/technologies/pyth.png")],
           open: false
         }
       ]
