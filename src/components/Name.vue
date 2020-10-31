@@ -27,6 +27,7 @@ export default {
   data() {
     return {
       h1stylename: {
+        textAlign: "center",
         color: "floralwhite",
         fontSize: "300%",
         backgroundColor: "#ed5c6f",

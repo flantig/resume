@@ -123,7 +123,7 @@ export default {
 
 .myButton:active {
   position: absolute;
-  top: 87%;
+  border-radius: 22px;
 
 }
 
