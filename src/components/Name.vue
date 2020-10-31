@@ -1,3 +1,14 @@
+/*
+ * @param img: In this component, I don't pass in any props and all the data it'd use is in data() because there's not too much going on in this component that
+ * would even require props to be passed down.
+ *
+ *      v-on:click - when one of the three icons (linkedin, pdf drive, or github) are clicked it'll send you to it's respective page as noted in logoImages
+ *
+ *      v-on:mousedown/mouseup: I figured the user should get some feedback when interacting with the site even if it's minimal. Upon mousedown, the opacity of the image button
+ *      is reduced to indicate that it is indeed being touched. This is also the reason why I added the styling to data() and not in style because manipulating it otherwise would mean
+ *      implementing an active tag for CSS like I did in the Panel component and hover.
+ */
+
 <template>
   <div id="nameStyle">
 
@@ -47,6 +58,7 @@ export default {
   text-align: center;
 
   width: 40%;
+  min-width: 400px;
   height: auto;
   margin: 0px auto;
   margin-top: 7%;

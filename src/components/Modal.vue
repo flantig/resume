@@ -1,14 +1,24 @@
+/*
+ *@param template(line 14): templates are not rendered immediately when the page is loaded so I use it to give my site some time to know which panel the user clicked on.
+ *If the user clicked on a panel with a specific title, it'll look through and see if that title matches up with any of the titles in data(){ projects: [...] } before
+ *loading info for it.
+ *
+ *    v-for="line in item.body.split('\n')": This is my admittedly janky solution to adding linebreaks into the text being pulled in from data(){ projects: [...] }. When it finds a "/n"
+ *    in the text, the br is inserted in between the split.
+ */
+
 <template>
   <div id="modalstyle">
+    <div id="modalinner">
+      <h2 id="title">{{ title }}</h2>
 
-    <h2 id="title">{{ title }}</h2>
+      <div v-for="item in projects" v-bind:key="item.key">
+        <template v-if="item.title === title"><h3 id="body" v-for="line in item.body.split('\n')" v-bind:key="line">
+          {{ line }} <br></h3></template>
+      </div>
+      <button @click="respond" class="myButton" id="button">Close</button>
 
-    <div v-for="item in projects" v-bind:key="item.key">
-      <template v-if="item.title === title"><h3 id="body" v-for="line in item.body.split('\n')" v-bind:key="line">
-        {{ line }} <br></h3></template>
     </div>
-    <button @click="respond" class="myButton" id="button">Close</button>
-
   </div>
 </template>
 
@@ -49,6 +59,7 @@ export default {
 
 <style scoped>
 #title {
+
   text-align: center;
   font-size: 400%;
   color: floralwhite;
@@ -57,9 +68,16 @@ export default {
 
 #body {
   text-align: center;
+
   color: floralwhite;
   margin-right: 3%;
   margin-left: 3%;
+}
+
+#modalinner {
+  height: 90%;
+  margin: 1em;
+  overflow-y: auto;
 }
 
 #modalstyle {
@@ -68,7 +86,10 @@ export default {
   position: fixed;
   top: 50%;
   width: 50%;
+  min-width: 650px;
   height: 50%;
+
+  scrollbar-width: none;
   border-radius: 20px;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);

@@ -1,3 +1,9 @@
+/*@param panelItems: passes in panel data so that the panels know what to load up. Eventually I'm going to pass it to a mobile profile Panel component when I get around
+ *to touching up the site.
+ *
+ *
+ */
+
 <template>
   <section id="app">
     <Name/>
