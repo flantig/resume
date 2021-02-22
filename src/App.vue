@@ -52,7 +52,7 @@ export default {
         {
           title: "Selenium Automation",
           src: require("./assets/panelImages/selenium.png"),
-          technology: [require("./assets/technologies/pyth.png")],
+          technology: [require("./assets/technologies/pyth.png"), require("./assets/technologies/se.png")],
           open: false
         },
         {
@@ -75,7 +75,8 @@ export default {
 
 <style>
 html {
-  height: 100%
+  height: 100%;
+
 }
 
 body {

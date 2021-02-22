@@ -147,7 +147,7 @@ export default {
   grid-template-rows: .5fr 1fr;
   background-color: #444444;
   margin: 0px auto; /*centers the container*/
-  margin-top: 2%; /*it's what divides it from the other panels*/
+  margin-bottom: 2%;
   border-radius: 10px; /*Rounds the edges*/
   list-style: none; /*removes the bullet points from the list*/
   box-shadow: 5px 5px 1px #ed5c6f;
