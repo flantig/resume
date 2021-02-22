@@ -40,7 +40,7 @@ export default {
         }, imgStyle: {width: "9%", margin: "5px", opacity: 1, minWidth: "70px"}
       }, {
         id: 2, src: require("../assets/headerImages/pdf.png"), openTab: function () {
-          window.open("https://drive.google.com/file/d/164LEDfctEf2hm2lvF91Vrde7i3ThSNwK/view?usp=sharing")
+          window.open("https://drive.google.com/file/d/1b7eU3sQunxFppldpuZ7oCb6CVZdtUrFf/view?usp=sharing")
         }, imgStyle: {width: "9%", margin: "5px", opacity: 1, minWidth: "70px"}
       }, {
         id: 3, src: require("../assets/headerImages/gitcat.png"), openTab: function () {

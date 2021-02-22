@@ -38,11 +38,31 @@ export default {
           open: true
         },
         {
+          title: "AniDay",
+          src: require("./assets/panelImages/dandyguy.png"),
+          technology: [require("./assets/technologies/dis.png"), require("./assets/technologies/js.png")],
+          open: false
+        },
+        {
+          title: "WPF Scheduler",
+          src: require("./assets/panelImages/scheduler.png"),
+          technology: [require("./assets/technologies/csharp.png"),require("./assets/technologies/wpf.png")],
+          open: false
+        },
+        {
           title: "Selenium Automation",
           src: require("./assets/panelImages/selenium.png"),
           technology: [require("./assets/technologies/pyth.png")],
           open: false
-        }
+        },
+        {
+          title: "Portfolio",
+          src: require("./assets/panelImages/pc.png"),
+          technology: [require("./assets/technologies/vue.png"),require("./assets/technologies/htmlcss.png")],
+          open: false
+        },
+
+
       ]
     }
   },
